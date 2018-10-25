@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="stylesheets/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900|Quicksand:300,400,500,700|Raleway:100,200,300,400,500,700,900|Roboto:100,200,300,400,500" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body style="margin:0">
+  <div class="nav-section">
+    <nav class="topnav">
+      <ul>
+        <li><a class="active" id="home" href="#section-top">HOME</a></li>
+        <li><a href="#section-projects">PROJECTS</a></li>
+        <li><a href="#section-about">ABOUT</a></li>
+        <li><a href="#section-resume">RESUME</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="section-top">
+    <div class="portrait">
+      <img src="images/jesse_profile.jpeg" alt="">
+      <!-- <p style="page-break-after: always;">&nbsp;</p> -->
+    </div>
+    <p id="name">Jesse Pelzar</p>
+    <p id="info"><a>73 Elmtree Lane,  NY 11753</a> | <a href="516-376-2309">516.376.2309</a> | <a href="mailto:subject=feedback">jessepelzar@gmail.com</a></p>
+  </div>
+  <div id="section-projects">
+    <div class="wrap">
+
+      <div class="box" id="top" style="width:400px; height: 400px; padding: 0;"></div>
+      <div class="infoSec" id="topinfo"></div>
+
+      <div id="break1"></div>
+
+      <div class="box" id="box1">
+        <div class="boxInner">
+          <a onclick="showHide(1)"><img src="images/project_thumbnails/PortfolioSite-01.png" ></a></a>
+          <div class="titleBox">mpp ivan project</div>
+        </div>
+      </div>
+      <div class="infoSec" id="selectedDiv1">
+        The FPGA Processor Bot project involved the use of a Papilio Duo FPGA platform, the IDE Xilinx ISE, and a Rover 5 chassis. The Idea of the project was to develop a general purpose processor using the FPGA that would be able to accept user inputted instructions measured in direction and distance. The distance entered using switches indicates the distance in binary for the current instruction while the direction of the current instruction is entered using the d-pad. The general purpose processor or GPP was developed in the Xilinx environment using VHDL and the schematic editor in order to create components and processes.
+      </div>
+            <!-- <div id="newLine1"></div> -->
+      <div id="break2"></div>
+
+      <div class="box" id="box2">
+        <div class="boxInner">
+          <a onclick="showHide(2)"><img src="images/project_thumbnails/PortfolioSite-02.png" alt=""></a>
+          <div class="titleBox">line following robot</div>
+        </div>
+      </div>
+      <div class="infoSec" id="selectedDiv2">
+        The IR Line Following Bot was a project that utilized the Atmega32U4 chip on the Papilio Duo platform, an QTR-8RC reflectance sensor array, and the Rover 5 chassis.
+      </div>
+            <!-- <div id="newLine2"></div> -->
+      <div id="break3"></div>
+
+      <div class="box" id="box3">
+        <div class="boxInner">
+          <a onclick="showHide(3)"><img src="images/project_thumbnails/PortfolioSite-03.png" alt=""></a>
+          <div class="titleBox">mine sweeping robot</div>
+        </div>
+      </div>
+      <div class="infoSec" id="selectedDiv3">
+        The Mine Sweeping Robot was a autonomous robot that was given the ability to scan the entire 6x6 foot course for land mines while avoiding walls and obsticles. The obsticle avoidance was done with HC-SR04 ultrasonic proximity sensors.
+        The hardware selected for this project was an arduino mega, Rover 5 Chassis, Papilio Duo, a IR Reciever, and four HC-SR04 sensors.
+        <p style="page-break-after: always;">&nbsp;</p>
+        <img style="width:100%;" src="images/minesweep/BlockDiagram_1.png" alt="">
+        <p style="page-break-after: always;">&nbsp;</p>
+        <img style="width:100%;" src="images/minesweep/Rover_path.png" alt="">
+        <p style="page-break-after: always;">&nbsp;</p>
+        <img style="width:100%;" src="images/minesweep/Rover_correct.png" alt="">
+        <p style="page-break-after: always;">&nbsp;</p>
+        <img style="width:100%;" src="images/minesweep/obstacle_traverse.png" alt="">
+      </div>
+
+      <div id="break4"></div>
+            <!-- <div id="newLine3"></div> -->
+      <div class="box" id="box4">
+        <div class="boxInner">
+          <a onclick="showHide(4)"><img src="images/project_thumbnails/PortfolioSite-04.png" alt=""></a>
+          <div class="titleBox">loomvr</div>
+        </div>
+      </div>
+      <div class="infoSec" id="selectedDiv4">
+        Coming Soon!
+      </div>
+
+      <div id="break5"></div>
+            <!-- <div id="newLine4"></div> -->
+      <div class="box" id="box5">
+        <div class="boxInner">
+          <a onclick="showHide(5)"><img src="images/project_thumbnails/PortfolioSite-05.png" alt=""></a>
+          <div class="titleBox">pulse</div>
+        </div>
+      </div>
+      <div class="infoSec" id="selectedDiv5">
+        Coming Soon!
+      </div>
+
+      <div id="break6"></div>
+            <!-- <div id="newLine5"></div> -->
+      <div class="box" id="box6">
+        <div class="boxInner">
+          <a onclick="showHide(6)"><img src="images/project_thumbnails/PortfolioSite-06.png" alt=""></a>
+          <div class="titleBox">luma</div>
+        </div>
+      </div>
+      <div class="infoSec" id="selectedDiv6">
+        Coming Soon!
+      </div>
+
+      <div id="break7"></div>
+            <!-- <div id="newLine6"></div> -->
+      <div class="box" id="box7">
+        <div class="boxInner">
+          <a onclick="showHide(7)"><img src="images/project_thumbnails/PortfolioSite-07.png" alt=""></a>
+          <div class="titleBox">say it hackathon</div>
+        </div>
+      </div>
+      <div class="infoSec" id="selectedDiv7">
+        Coming Soon!
+      </div>
+
+      <div id="break8"></div>
+            <!-- <div id="newLine7"></div> -->
+      <div class="box" id="box8">
+        <div class="boxInner">
+          <a onclick="showHide(8)"><img src="images/project_thumbnails/PortfolioSite-08.png" alt=""></a>
+          <div class="titleBox">loomx</div>
+        </div>
+      </div>
+      <div class="infoSec" id="selectedDiv8">
+        Coming Soon!
+      </div>
+
+      <div id="break9"></div>
+            <!-- <div id="newLine8"></div> -->
+      <div class="box" id="box9">
+        <div class="boxInner">
+          <a onclick="showHide(9)"><img src="images/project_thumbnails/PortfolioSite-09.png" alt=""></a>
+          <div class="titleBox">AVRE</div>
+        </div>
+      </div>
+      <div class="infoSec" id="selectedDiv9">
+        Coming Soon!
+      </div>
+      <!-- <div class="box">
+          <div class="boxInner">
+            <div class="titleBox">JAMhoops</div>
+          </div>
+        </div> -->
+      <!-- <div class="box">
+          <div class="boxInner">
+            <div class="titleBox">colonial</div>
+          </div>
+        </div> -->
+      <!-- <div class="box">
+          <div class="boxInner">
+            <div class="titleBox">phonofix</div>
+          </div>
+        </div> -->
+        <!-- <div class="box">
+            <div class="boxInner">
+              <div class="titleBox">aaaid</div>
+            </div>
+          </div> -->
+    </div>
+  </div>
+  <div id="section-about">
+
+  </div>
+  <div id="section-resume">
+    <object type="application/pdf" data="images/Jesse_Pelzar_Resume-2018.docx.pdf" width="100%" height="800px">
+
+      </object>
+  </div>
+<script type="text/javascript" src="scripts/index.js">
+
+</script>
+</body>
+
+</html>
