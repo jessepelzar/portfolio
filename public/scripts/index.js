@@ -28,26 +28,26 @@
 
 // ionic.js
 
-var str = "32514";
-var newstr = [];
-for (var i = 0; i < str.length; i++) {
-  var j = parseInt(str[i]);
-  newstr[j-1] = (i+1).toString();
-}
-
-var str2 = "23451";
-var newstr2 = [];
-var pwr = 1;
-for (var i = 0; i < str2.length; i++) {
-  newstr2[(i-pwr) % str2.length] = str2[i];
-}
-
-
-
-console.log("invert");
-console.log(newstr);
-console.log("pwr");
-console.log(newstr2);
+// var str = "32514";
+// var newstr = [];
+// for (var i = 0; i < str.length; i++) {
+//   var j = parseInt(str[i]);
+//   newstr[j-1] = (i+1).toString();
+// }
+//
+// var str2 = "23451";
+// var newstr2 = [];
+// var pwr = 1;
+// for (var i = 0; i < str2.length; i++) {
+//   newstr2[(i-pwr) % str2.length] = str2[i];
+// }
+//
+//
+//
+// console.log("invert");
+// console.log(newstr);
+// console.log("pwr");
+// console.log(newstr2);
 
 function showHide(v) {
   var selectedThumbnail = v.toString();
@@ -63,7 +63,7 @@ function showHide(v) {
   let x = document.getElementById(selected);
   let j = document.getElementById(aboveDiv);
   var wrap = document.getElementsByClassName("wrap")[0];
-  var top = document.getElementById("top");
+  // var top = document.getElementById("top");
 
   //var span = document.createElement('span');
 
@@ -73,10 +73,11 @@ function showHide(v) {
     var breakPoint = document.getElementById("break" + i_str);
 
     if (i_str === selectedThumbnail) {
-      if (x.style.display === "block") {
+      if (topProj.style.display === "block") {
         //x.style.display = "none";
         // removes new line
-
+        topProj.style.display = "none";
+        topInfo.style.display = "none";
         //tnailPrev.style.display = "block";
         //breakPoint.style.display = "none";
       }
