@@ -2,6 +2,20 @@
 //   let
 // }
 //window.onload = function() {
+// var canvas = $("canvas"),  //jQuery selector, similar to querySelectorAll()
+// //...
+//
+// function simulate(e) {
+//     var evt = document.createEvent("MouseEvents");
+//     evt.initMouseEvent("mousemove", true, true, window,
+//         0, e.screenX, e.screenY, e.clientX, e.clientY, false, false, false, false, 0, null);
+//     canvas[0].dispatchEvent(evt);
+// }
+//
+// $("body > *").each(function () {
+//     this.addEventListener("mousemove", simulate);
+// });
+
   for (let i = 1; i <= 9; i++){
     var str = "break" + i.toString();
     var breakPoint = document.getElementById(str);

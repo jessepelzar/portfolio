@@ -27,7 +27,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 8pt;
-  padding: 15px 16px;
+  padding: 14px 23px;
   text-decoration: none;
 }
 
@@ -38,34 +38,47 @@ ul li {
 }
 
 #section-top {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   margin-bottom: 50px;
   padding-bottom: 20px;
 }
 
+canvas {
+
+  z-index: -1;
+  position: absolute;
+  width: 100vw;
+  height: auto;
+
+}
+
 .portrait {
-  width: 150px;
-  height: 150px;
+  width: 20vw;
+  height: 20vw;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
   margin: auto;
+  display: block;
+  top: 70px;
 }
 
 .portrait img {
-  display: block;
-  margin: auto;
-  height: auto;
   width: 100%;
 }
 
+.info {
+  padding-top: 80px;
+}
+
 #name {
+  /* z-index: +2; */
   color: #000;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 20pt;
   font-weight: 400;
-  padding: 15px 16px;
+  /* padding: 15px 16px; */
   text-decoration: none;
 }
 
@@ -91,21 +104,34 @@ ul li {
 }
 
 .box {
+  background-color: white;
   text-align: center;
   display: inline-block;
   border: 3px solid #000;
+  border-radius: 10%;
   position: relative;
   width: 20%;
   padding-bottom: 20%;
-  margin: 0 auto;
+  margin: 2%;
+  text-decoration: none;
+  transition: border 0.3s linear;
+    -webkit-transition: border 0.3s linear;
+    -moz-transition: border 0.3s linear;
 }
+.box:hover {
+  border: 3px solid #fff;
+}
+
+/* body img {
+  border-radius: 8%;
+} */
 
 .boxInner {
   position: absolute;
-  left: 10px;
-  right: 10px;
-  top: 10px;
-  bottom: 10px;
+  left: 15px;
+  right: 15px;
+  top: 15px;
+  bottom: 15px;
   overflow: hidden;
 }
 
@@ -148,6 +174,13 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     text-align: center;
     text-align: justify;
   }
+  .portrait {
+    width: 150px;
+    height: 150px;
+  }
+  canvas {
+    height: 500px;
+  }
 }
 @media only screen and (max-width: 1050px) and (min-width: 651px) {
   .box {
@@ -159,6 +192,13 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     text-align: center;
     text-align: justify;
   }
+  .portrait {
+    width: 120px;
+    height: 120px;
+  }
+  canvas {
+    height: 400px;
+  }
 }
 @media only screen and (max-width: 650px) and (min-width: 481px) {
   .box {
@@ -169,6 +209,17 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     width: 300px;
     text-align: justify;
   }
+  .portrait {
+    width: 100px;
+    height: 100px;
+  }
+  #section-top {
+    height: 400px;
+  }
+  canvas {
+    height: 400px;
+  }
+
 }
 @media only screen and (max-width: 480px) {
   .box {
@@ -180,6 +231,17 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     text-align: center;
     text-align: justify;
   }
+  .portrait {
+    width: 90px;
+    height: 90px;
+  }
+  canvas {
+    display: none;
+  }
+}
+
+#top {
+  margin: 0 auto;
 }
 
 .infoSec {

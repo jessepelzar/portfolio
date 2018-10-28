@@ -20,15 +20,29 @@
       </ul>
     </nav>
   </div>
-  <div id="section-top">
-    <div class="portrait">
-      <img src="images/jesse_profile.jpeg" alt="">
-      <!-- <p style="page-break-after: always;">&nbsp;</p> -->
+
+  <span id="jsWidth"></span>
+  <span id="jsHeight"></span>
+
+  <div class="canvas">
+    <div id="section-top">
+
+      <canvas  id="canvas-1" resize="true" style="background-image:linear-gradient(to bottom right, #ffcfff, #00cfff)"></canvas>
+
+      <div class="portrait">
+        <img src="images/jesse_profile.jpeg" alt="">
+        <!-- <p style="page-break-after: always;">&nbsp;</p> -->
+      </div>
+      <div class="info">
+        <p id="name">Jesse Pelzar</p>
+        <p id="info"><a>73 Elmtree Lane,  NY 11753</a><a> | </a><a href="516-376-2309">516.376.2309</a><a> | </a><a href="mailto:subject=feedback">jessepelzar@gmail.com</a></p>
+      </div>
     </div>
-    <p id="name">Jesse Pelzar</p>
-    <p id="info"><a>73 Elmtree Lane,  NY 11753</a> | <a href="516-376-2309">516.376.2309</a> | <a href="mailto:subject=feedback">jessepelzar@gmail.com</a></p>
   </div>
+
+
   <div id="section-projects">
+
     <div class="wrap">
 
       <div class="box" id="top" style="width:400px; height: 400px; padding: 0;"></div>
@@ -112,7 +126,12 @@
         </div>
       </div>
       <div class="infoSec" id="selectedDiv6">
-        Coming Soon!
+        <img style="width:100%;" src="images/luma/dev1.jpg" alt="">
+        <img style="width:100%;" src="images/luma/dev2.jpg" alt="">
+        <img style="width:100%;" src="images/luma/dev3.jpg" alt="">
+        <img style="width:100%;" src="images/luma/prod1.png" alt="">
+        <img style="width:100%;" src="images/luma/prod2.png" alt="">
+
       </div>
 
       <div id="break7"></div>
@@ -180,9 +199,187 @@
 
       </object>
   </div>
-<script type="text/javascript" src="scripts/index.js">
+  <script type="text/paperscript" canvas="canvas-1">
+// A tribute to Nyan Cat http://www.youtube.com/watch?v=QH2-TGUlwu4
+// Ported from original Metaball script by SATO Hiroyuki
+// http://park12.wakwak.com/~shp/lc/et/en_aics_script.html
+project.currentStyle = {
+	fillColor: 'white'
+};
+//project.opacity = 0.1;
 
+var val = 100;
+var val2 = 0;
+
+
+var ballPositions = [
+  [100, 100], [300, 200], [100, 300], [300, 400], [100, 500], [300, 600], [100, 700],
+	[500, 100], [700, 200], [500, 300], [700, 400], [500, 500], [700, 600], [500, 700],
+	[900, 100], [1100, 200], [900, 300], [1100, 400], [900, 500], [1100, 600], [900, 700],
+	[1300, 100], [1500, 200], [1300, 300], [1500, 400], [1300, 500], [1500, 600], [1300, 700],
+  [1700, 100], [1900, 200], [1700, 300], [1900, 400], [1700, 500], [1900, 600], [1700, 700],
+	[2100, 100], [2300, 200], [2100, 300], [2300, 400], [2100, 500], [2300, 600], [2100, 700],
+	[2500, 100], [2700, 200], [2500, 300], [2700, 400], [2500, 500], [2700, 600], [2500, 700],
+	[2900, 100], [3100, 200], [2900, 300], [3100, 400], [2900, 500], [3100, 600], [2900, 700]
+  /*
+  [100, 100], [300, 200], [100, 300], [300, 400], [100, 500], [300, 600], [100, 700], [300, 800], [100, 900],
+	[500, 100], [700, 200], [500, 300], [700, 400], [500, 500], [700, 600], [500, 700], [700, 800], [500, 900],
+	[900, 100], [1100, 200], [900, 300], [1100, 400], [900, 500], [1100, 600], [900, 700], [1100, 800], [900, 900],
+	[1300, 100], [1500, 200], [1300, 300], [1500, 400], [1300, 500], [1500, 600], [1300, 700], [1500, 800], [1300, 900],
+  [1700, 100], [1900, 200], [1700, 300], [1900, 400], [1700, 500], [1900, 600], [1700, 700], [1900, 800], [1700, 900],
+	[2100, 100], [2300, 200], [2100, 300], [2300, 400], [2100, 500], [2300, 600], [2100, 700], [2300, 800], [2100, 900],
+	[2500, 100], [2700, 200], [2500, 300], [2700, 400], [2500, 500], [2700, 600], [2500, 700], [2700, 800], [2500, 900],
+	[2900, 100], [3100, 200], [2900, 300], [3100, 400], [2900, 500], [3100, 600], [2900, 700], [3100, 800], [2900, 900]
+  */
+
+];
+
+
+function jsUpdateSize(){
+    // Get the dimensions of the viewport
+    var width = window.innerWidth ||
+                document.documentElement.clientWidth ||
+                document.body.clientWidth;
+    var height = window.innerHeight ||
+                 document.documentElement.clientHeight ||
+                 document.body.clientHeight;
+
+    //document.getElementById('jsWidth').innerHTML = width;  // Display the width
+    //document.getElementById('jsHeight').innerHTML = height;// Display the height
+    console.log(width);
+
+    // for (var i = 0; i < ballPositions.length; i++) {
+    //   for (var j = 0; j < ballPositions[i].length; j++) {
+    //     ballPositions[i][j] = ballPositions[i][j]/(1.85)/*1.85*/;
+    //   }
+    // }
+
+};
+for (var i = 0; i < ballPositions.length; i++) {
+  for (var j = 0; j < ballPositions[i].length; j++) {
+    ballPositions[i][j] = ballPositions[i][j]/(1.55)/*1.85*/;
+  }
+}
+window.onload = jsUpdateSize;       // When the page first loads
+window.onresize = jsUpdateSize;     // When the browser changes size
+
+var w = window.innerWidth;
+
+
+
+var handle_len_rate = 1;
+var circlePaths = [];
+var radius = 10;
+for (var i = 0, l = ballPositions.length; i < l; i++) {
+	var circlePath = new Path.Circle({
+		center: ballPositions[i],
+		radius: 5
+	});
+	circlePaths.push(circlePath);
+}
+
+var largeCircle = new Path.Circle({
+	center: [676, 433],
+	radius: 5
+});
+circlePaths.push(largeCircle);
+
+function onMouseMove(event) {
+	largeCircle.position = event.point;
+	generateConnections(circlePaths);
+}
+
+var connections = new Group();
+function generateConnections(paths) {
+	// Remove the last connection paths:
+	connections.children = [];
+
+	for (var i = 0, l = paths.length; i < l; i++) {
+		for (var j = i - 1; j >= 0; j--) {
+			var path = metaball(paths[i], paths[j], .1, handle_len_rate, 100);
+			if (path) {
+				connections.appendTop(path);
+				path.removeOnMove();
+			}
+		}
+	}
+}
+
+generateConnections(circlePaths);
+
+// ---------------------------------------------
+function metaball(ball1, ball2, v, handle_len_rate, maxDistance) {
+	var center1 = ball1.position;
+	var center2 = ball2.position;
+	var radius1 = ball1.bounds.width / 2;
+	var radius2 = ball2.bounds.width / 2;
+	var pi2 = Math.PI / 2;
+	var d = center1.getDistance(center2);
+	var u1, u2;
+
+	if (radius1 == 0 || radius2 == 0)
+		return;
+
+	if (d > maxDistance || d <= Math.abs(radius1 - radius2)) {
+		return;
+	} else if (d < radius1 + radius2) { // case circles are overlapping
+		u1 = Math.acos((radius1 * radius1 + d * d - radius2 * radius2) /
+				(2 * radius1 * d));
+		u2 = Math.acos((radius2 * radius2 + d * d - radius1 * radius1) /
+				(2 * radius2 * d));
+	} else {
+		u1 = 0;
+		u2 = 0;
+	}
+
+	var angle1 = (center2 - center1).getAngleInRadians();
+	var angle2 = Math.acos((radius1 - radius2) / d);
+	var angle1a = angle1 + u1 + (angle2 - u1) * v;
+	var angle1b = angle1 - u1 - (angle2 - u1) * v;
+	var angle2a = angle1 + Math.PI - u2 - (Math.PI - u2 - angle2) * v;
+	var angle2b = angle1 - Math.PI + u2 + (Math.PI - u2 - angle2) * v;
+	var p1a = center1 + getVector(angle1a, radius1);
+	var p1b = center1 + getVector(angle1b, radius1);
+	var p2a = center2 + getVector(angle2a, radius2);
+	var p2b = center2 + getVector(angle2b, radius2);
+
+	// define handle length by the distance between
+	// both ends of the curve to draw
+	var totalRadius = (radius1 + radius2);
+	var d2 = Math.min(v * handle_len_rate, (p1a - p2a).length / totalRadius);
+
+	// case circles are overlapping:
+	d2 *= Math.min(1, d * 2 / (radius1 + radius2));
+
+	radius1 *= d2;
+	radius2 *= d2;
+
+	var path = new Path({
+		segments: [p1a, p2a, p2b, p1b],
+		style: ball1.style,
+		closed: true
+	});
+	var segments = path.segments;
+	segments[0].handleOut = getVector(angle1a - pi2, radius1);
+	segments[1].handleIn = getVector(angle2a + pi2, radius2);
+	segments[2].handleOut = getVector(angle2b - pi2, radius2);
+	segments[3].handleIn = getVector(angle1b + pi2, radius1);
+	return path;
+}
+
+// ------------------------------------------------
+function getVector(radians, length) {
+	return new Point({
+		// Convert radians to degrees:
+		angle: radians * 180 / Math.PI,
+		length: length
+	});
+}
 </script>
+<script type="text/javascript" src="scripts/codemirror.js"></script>
+<script type="text/javascript" src="scripts/index.js"></script>
+<script type="text/javascript" src="scripts/paper.js"></script>
+<script type="text/javascript" src="scripts/jquery.js"></script>
 </body>
 
 </html>
