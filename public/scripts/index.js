@@ -50,6 +50,8 @@
 // console.log(newstr2);
 
 function showHide(v) {
+  var top = document.getElementById("section-top");
+
   var selectedThumbnail = v.toString();
   var aboveDiv = "selectedDiv" + (v-1).toString();
 
@@ -62,7 +64,7 @@ function showHide(v) {
 
   let x = document.getElementById(selected);
   let j = document.getElementById(aboveDiv);
-  var wrap = document.getElementsByClassName("wrap")[0];
+  var projects = document.getElementById("section-projects");
   // var top = document.getElementById("top");
 
   //var span = document.createElement('span');
@@ -72,12 +74,18 @@ function showHide(v) {
     var i_str = i.toString();
     var breakPoint = document.getElementById("break" + i_str);
 
+    // if ( tnail !== ("box" + v.tostring())) {
+    //   topProj.innerHTML = tnail_html;
+    //   topinfo.innerHTML = x.innerHTML;
+    // }
     if (i_str === selectedThumbnail) {
       if (topProj.style.display === "block") {
         //x.style.display = "none";
         // removes new line
         topProj.style.display = "none";
         topInfo.style.display = "none";
+
+        top.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
         //tnailPrev.style.display = "block";
         //breakPoint.style.display = "none";
       }
@@ -87,7 +95,7 @@ function showHide(v) {
         topProj.innerHTML = tnail_html;
         topinfo.innerHTML = x.innerHTML;
         //tnail.style.display = "none";
-        wrap.scrollIntoView();
+        projects.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
 
         //x.style.display = "block";
         //breakPoint.style.display = "block";
