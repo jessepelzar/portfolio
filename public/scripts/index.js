@@ -82,7 +82,7 @@ function showHide(v) {
       //if (topProj.style.display === "block") {
 
         // replaces top thumbnail when another thumbnail is clicked
-        if (topProj.innerHTML !== tnail.innerHTML) {
+        if (topProj.innerHTML !== tnail.innerHTML || topProj.style.display == "none") {
           topProj.style.display = "block";
           topInfo.style.display = "block";
           topProj.innerHTML = tnail_html;
