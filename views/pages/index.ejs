@@ -10,25 +10,25 @@
 </head>
 
 <body style="margin:0">
-  <div class="nav-section">
-    <nav class="topnav">
-      <ul>
-        <li><a class="active" id="home" href="#section-top">HOME</a></li>
-        <li><a href="#section-projects">PROJECTS</a></li>
-        <li><a href="#section-about">ABOUT</a></li>
-        <li><a href="#section-resume">RESUME</a></li>
-      </ul>
-    </nav>
-  </div>
+
 
   <span id="jsWidth"></span>
   <span id="jsHeight"></span>
 
   <div class="canvas">
-    <div id="section-top">
 
       <canvas  id="canvas-1" resize="true" style="background-image:linear-gradient(to bottom right, #ffcfff, #00cfff)"></canvas>
-
+      <div id="section-top">
+        <div class="nav-section">
+          <nav class="topnav">
+            <ul>
+              <li><a class="active" id="home" href="#section-top">HOME</a></li>
+              <li><a href="#section-projects">PROJECTS</a></li>
+              <li><a href="#section-about">ABOUT</a></li>
+              <li><a href="#section-resume">RESUME</a></li>
+            </ul>
+          </nav>
+        </div>
       <div class="portrait">
         <img src="images/jesse_profile.jpeg" alt="">
         <!-- <p style="page-break-after: always;">&nbsp;</p> -->
@@ -126,11 +126,57 @@
         </div>
       </div>
       <div class="infoSec" id="selectedDiv6">
-        <img style="width:100%;" src="images/luma/dev1.jpg" alt="">
-        <img style="width:100%;" src="images/luma/dev2.jpg" alt="">
-        <img style="width:100%;" src="images/luma/dev3.jpg" alt="">
-        <img style="width:100%;" src="images/luma/prod1.png" alt="">
-        <img style="width:100%;" src="images/luma/prod2.png" alt="">
+        <div class="tools-container-main">
+          <div class="tools-container-inner">
+            <div class="tools-label">
+              <p id="category">Software</p>
+            </div>
+            <div class="tools-content">
+              <div class="tools-line"></div>
+              <div class="tools-info">
+                <ul>
+                  <li>Unity 3D</li>
+                  <li>Autodesk Maya</li>
+                  <li>Faceshift Studio</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tools-container-inner">
+            <div class="tools-label">
+              <p id="category">Languages</p>
+            </div>
+            <div class="tools-content">
+              <div class="tools-line"></div>
+              <div class="tools-info">
+                <ul>
+                  <li>C#</li>
+                  <li>Javascript</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tools-container-inner">
+            <div class="tools-label">
+              <p id="category">Hardware</p>
+            </div>
+            <div class="tools-content">
+              <div class="tools-line"></div>
+              <div class="tools-info">
+                <ul>
+                  <li>Intel Realsense</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="images">
+          <img style="width:100%;" src="images/luma/dev1.jpg" alt="">
+          <img style="width:100%;" src="images/luma/dev2.jpg" alt="">
+          <img style="width:100%;" src="images/luma/dev3.jpg" alt="">
+          <img style="width:100%;" src="images/luma/prod1.png" alt="">
+          <img style="width:100%;" src="images/luma/prod2.png" alt="">
+        </div>
 
       </div>
 

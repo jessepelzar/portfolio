@@ -12,8 +12,9 @@
   padding-left: 10px;
   width: 100%;
   overflow: hidden;
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.3);
   height: 40px;
+
 }
 
 .topnav li {
@@ -29,7 +30,12 @@
   font-size: 8pt;
   padding: 14px 23px;
   text-decoration: none;
+  transition: color 0.3s linear;
 }
+.topnav li a:hover {
+  color: #fff;
+}
+
 
 ul li {
   padding: 0;
@@ -65,7 +71,14 @@ canvas {
 
 .portrait img {
   width: 100%;
+  transition: -webkit-filter 0.3s linear;
+
 }
+
+.portrait img:hover {
+  -webkit-filter: invert(1);
+}
+
 
 .info {
   padding-top: 80px;
@@ -95,6 +108,12 @@ canvas {
   text-align: center;
 }
 
+/* PROJECTS */
+
+#section-projects {
+  pa
+}
+
 .wrap {
   text-align: center;
   overflow: hidden;
@@ -107,9 +126,9 @@ canvas {
   background-color: white;
   text-align: center;
   display: inline-block;
+  position: relative;
   border: 3px solid #000;
   border-radius: 10%;
-  position: relative;
   width: 20%;
   padding-bottom: 20%;
   margin: 2%;
@@ -170,13 +189,16 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-bottom: 25%;
   }
   .infoSec {
-    width: 600px;
+    width: 1000px;
     text-align: center;
     text-align: justify;
   }
   .portrait {
     width: 150px;
     height: 150px;
+  }
+  #section-top {
+    height: 500px;
   }
   canvas {
     height: 500px;
@@ -188,13 +210,16 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-bottom: 33.3%;
   }
   .infoSec {
-    width: 400px;
+    width: 600px;
     text-align: center;
     text-align: justify;
   }
   .portrait {
     width: 120px;
     height: 120px;
+  }
+  #section-top {
+    height: 400px;
   }
   canvas {
     height: 400px;
@@ -206,7 +231,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-bottom: 50%;
   }
   .infoSec {
-    width: 300px;
+    width: 400px;
     text-align: justify;
   }
   .portrait {
@@ -227,7 +252,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-bottom: 100%;
   }
   .infoSec {
-    width: 300px;
+    width: 400px;
     text-align: center;
     text-align: justify;
   }
@@ -253,4 +278,92 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   font-size: 12pt;
   font-weight: 300;
   padding: 20px 26px;
+}
+
+
+/*  LUMA */
+.tools-container-main {
+  width: 100%;
+  /* height: 300px; */
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.tools-container-inner {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  width: 300px;
+  /* text-align: left; */
+  /* float: left; */
+}
+
+
+.tools-container-main p {
+  font-family: 'Railway', sans-serif;
+  font-size: 20pt;
+  font-weight: 300;
+}
+
+.tools-container-main li {
+  font-family: 'Railway', sans-serif;
+  font-size: 14pt;
+  font-weight: 100;
+  text-align: left;
+}
+
+.tools-content {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  overflow: hidden;
+  background-color: #FFF;
+  display: inline-block;
+  /* float: left; */
+}
+
+
+.tools-label {
+  float: left;
+  padding-left: 92px;
+}
+
+.tools-content {
+    width: 80%;
+    height: 100px;
+    /* background: aqua; */
+    margin: auto;
+    padding: 10px;
+    padding-left: 92px;
+}
+
+
+
+.tools-line {
+    /* width: 15%; */
+    height: 200px;
+    /* background: red; */
+    float: left;
+    border-left: 1px solid black;
+    height: 50px;
+    margin-top: 2px;
+}
+.tools-info {
+    /* margin-left: 15%; */
+    height: 200px;
+    padding-top: 0;
+    /* background: black; */
+}
+
+.tools-info ul {
+  margin: 0;
+  padding-left: 30px;
+}
+
+.tools-info li {
+  text-align: left;
 }
