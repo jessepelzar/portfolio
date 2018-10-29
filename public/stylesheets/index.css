@@ -71,8 +71,9 @@ canvas {
 
 .portrait img {
   width: 100%;
-  transition: -webkit-filter 0.3s linear;
-
+  /* transition: -webkit-filter 1.0s linear; */
+  transition: -webkit-filter 1s linear;
+  /* transition: -webkit-next 1s linear; */
 }
 
 .portrait img:hover {

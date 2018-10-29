@@ -84,13 +84,13 @@
         The Mine Sweeping Robot was a autonomous robot that was given the ability to scan the entire 6x6 foot course for land mines while avoiding walls and obsticles. The obsticle avoidance was done with HC-SR04 ultrasonic proximity sensors.
         The hardware selected for this project was an arduino mega, Rover 5 Chassis, Papilio Duo, a IR Reciever, and four HC-SR04 sensors.
         <p style="page-break-after: always;">&nbsp;</p>
-        <img style="width:100%;" src="images/minesweep/BlockDiagram_1.png" alt="">
+        <img style="width:50%;" src="images/minesweep/BlockDiagram_1.png" alt="">
         <p style="page-break-after: always;">&nbsp;</p>
-        <img style="width:100%;" src="images/minesweep/Rover_path.png" alt="">
+        <img style="width:50%;" src="images/minesweep/Rover_path.png" alt="">
         <p style="page-break-after: always;">&nbsp;</p>
-        <img style="width:100%;" src="images/minesweep/Rover_correct.png" alt="">
+        <img style="width:30%;" src="images/minesweep/Rover_correct.png" alt="">
         <p style="page-break-after: always;">&nbsp;</p>
-        <img style="width:100%;" src="images/minesweep/obstacle_traverse.png" alt="">
+        <img style="width:20%;" src="images/minesweep/obstacle_traverse.png" alt="">
       </div>
 
       <div id="break4"></div>
@@ -250,7 +250,7 @@
 // Ported from original Metaball script by SATO Hiroyuki
 // http://park12.wakwak.com/~shp/lc/et/en_aics_script.html
 project.currentStyle = {
-	fillColor: 'white'
+	fillColor: 'rgba(255, 255, 255, 0.4)'
 };
 //project.opacity = 0.1;
 
@@ -316,17 +316,26 @@ var w = window.innerWidth;
 var handle_len_rate = 1;
 var circlePaths = [];
 var radius = 10;
+var num;
+for(var h = 0; h<5; h++){
+
+}
+
 for (var i = 0, l = ballPositions.length; i < l; i++) {
+  num = Math.floor(Math.random() * (5 - 1) + 1);
+  console.log(num);
 	var circlePath = new Path.Circle({
 		center: ballPositions[i],
-		radius: 5
+    // dots radius
+    radius: num
 	});
 	circlePaths.push(circlePath);
 }
 
 var largeCircle = new Path.Circle({
 	center: [676, 433],
-	radius: 5
+  // cursor radius
+	radius: 1
 });
 circlePaths.push(largeCircle);
 
@@ -342,7 +351,7 @@ function generateConnections(paths) {
 
 	for (var i = 0, l = paths.length; i < l; i++) {
 		for (var j = i - 1; j >= 0; j--) {
-			var path = metaball(paths[i], paths[j], .1, handle_len_rate, 100);
+			var path = metaball(paths[i], paths[j], num/10, handle_len_rate, 120);
 			if (path) {
 				connections.appendTop(path);
 				path.removeOnMove();
