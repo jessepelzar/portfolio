@@ -79,29 +79,43 @@ function showHide(v) {
     //   topinfo.innerHTML = x.innerHTML;
     // }
     if (i_str === selectedThumbnail) {
-      if (topProj.style.display === "block") {
-        //x.style.display = "none";
-        // removes new line
-        topProj.style.display = "none";
-        topInfo.style.display = "none";
+      //if (topProj.style.display === "block") {
 
-        top.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
+        // replaces top thumbnail when another thumbnail is clicked
+        if (topProj.innerHTML !== tnail.innerHTML) {
+          topProj.style.display = "block";
+          topInfo.style.display = "block";
+          topProj.innerHTML = tnail_html;
+          topinfo.innerHTML = x.innerHTML;
+          projects.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
+        }
+        else {
+          topProj.style.display = "none";
+          topInfo.style.display = "none";
+          top.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
+        }
+
+        console.log(topProj.innerHTML);
+        console.log(tnail.innerHTML);
+
+
+
         //tnailPrev.style.display = "block";
         //breakPoint.style.display = "none";
-      }
-      else {
-        topProj.style.display = "block";
-        topInfo.style.display = "block";
-        topProj.innerHTML = tnail_html;
-        topinfo.innerHTML = x.innerHTML;
-        //tnail.style.display = "none";
-        projects.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
-
-        //x.style.display = "block";
-        //breakPoint.style.display = "block";
-        console.log(wrap.childNodes.innerHTML);
-        // makes new line
-      }
+      //}
+      // else {
+      //   topProj.style.display = "block";
+      //   topInfo.style.display = "block";
+      //   topProj.innerHTML = tnail_html;
+      //   topinfo.innerHTML = x.innerHTML;
+      //   //tnail.style.display = "none";
+      //   projects.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
+      //
+      //   //x.style.display = "block";
+      //   //breakPoint.style.display = "block";
+      //   //console.log(wrap.childNodes.innerHTML);
+      //   // makes new line
+      // }
     }
     else {
       // when a thumbnail is clicked, these below which are not the selected will be set to none
