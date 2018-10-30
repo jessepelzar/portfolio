@@ -48,8 +48,10 @@
 // console.log(newstr);
 // console.log("pwr");
 // console.log(newstr2);
+var currentProject;
 
 function showHide(v) {
+  currentProject = v;
   var top = document.getElementById("section-top");
 
   var selectedThumbnail = v.toString();
@@ -81,12 +83,18 @@ function showHide(v) {
     if (i_str === selectedThumbnail) {
       //if (topProj.style.display === "block") {
 
+
         // replaces top thumbnail when another thumbnail is clicked
         if (topProj.innerHTML !== tnail.innerHTML || topProj.style.display == "none") {
           topProj.style.display = "block";
           topInfo.style.display = "block";
           topProj.innerHTML = tnail_html;
           topinfo.innerHTML = x.innerHTML;
+          // makes the small descriptions under the colored icons display none after added as the zeroth class child because it is put to the top making it the first.
+          for (var p = 1; p <= 4; p++) {
+            var text_selected = document.getElementsByClassName("description" + p.toString())[0];
+            text_selected.style.display = "none";
+          }
           projects.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
         }
         else {
@@ -125,28 +133,15 @@ function showHide(v) {
 
 
 
-for (var i = 1; i <= 4; i++) {
-  var text_selected = document.getElementById("description" + i.toString());
-  text_selected.style.display = "none";
-}
-
-//var padding = ["0px", "100px", "60px", "80px"];
 
 function show(n) {
-
-  text_selected = document.getElementById("description" + n.toString());
-  console.log(0);
+  text_selected = document.getElementsByClassName("description" + n.toString())[0];
   text_selected.style.display = "block";
-  //text_selected.style.paddingLeft = padding[n-1];
 }
 
 function hide(n) {
-
-  text_selected = document.getElementById("description" + n.toString());
-
-console.log(1);
-    text_selected.style.display = "none";
-
+  text_selected = document.getElementsByClassName("description" + n.toString())[0];
+  text_selected.style.display = "none";
 }
 // function showHide(v) {
 //   var selectedThumbnail = v.toString();

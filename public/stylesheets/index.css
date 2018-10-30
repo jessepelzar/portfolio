@@ -467,16 +467,16 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-left: 123px;
   } */
 
-  #description1 {
+  .description1 {
     padding-left: 125px;
   }
-  #description2 {
+  .description2 {
     padding-left: 280px;
   }
-  #description3 {
+  .description3 {
     padding-left: 440px;
   }
-  #description4 {
+  .description4 {
     padding-left: 600px;
   }
 
@@ -539,16 +539,16 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-left: 123px;
   } */
 
-  #description1 {
+  .description1 {
     padding-left: 100px;
   }
-  #description2 {
+  .description2 {
     padding-left: 100px;
   }
-  #description3 {
+  .description3 {
     padding-left: 100px;
   }
-  #description4 {
+  .description4 {
     padding-left: 100px;
   }
   .images-container {
@@ -605,16 +605,16 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-left: 123px;
   } */
 
-  #description1 {
+  .description1 {
     padding-left: 65px;
   }
-  #description2 {
+  .description2 {
     padding-left: 65px;
   }
-  #description3 {
+  .description3 {
     padding-left: 65px;
   }
-  #description4 {
+  .description4 {
     padding-left: 65px;
   }
 
@@ -667,16 +667,16 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-left: 123px;
   } */
 
-  #description1 {
+  .description1 {
     padding-left: 0px;
   }
-  #description2 {
+  .description2 {
     padding-left: 0px;
   }
-  #description3 {
+  .description3 {
     padding-left: 0px;
   }
-  #description4 {
+  .description4 {
     padding-left: 0px;
   }
 
