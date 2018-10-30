@@ -28,12 +28,33 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 8pt;
+}
+
+.navbar-left a{
   padding: 14px 23px;
   text-decoration: none;
   transition: color 0.3s linear;
 }
+
 .topnav li a:hover {
   color: #fff;
+}
+
+.topnav li.navbar-right {
+  float: right !important;
+  padding-right: 20px;
+}
+
+.topnav img {
+  width: 30px;
+  text-align: right;
+  transition: -webkit-filter 0.3s linear;
+
+  padding-top: 4px;
+}
+
+.topnav img:hover {
+  -webkit-filter: invert(1);
 }
 
 
@@ -113,9 +134,9 @@ canvas {
 
 /* PROJECTS */
 
-#section-projects {
+/* #section-projects {
   pa
-}
+} */
 
 .wrap {
   text-align: center;

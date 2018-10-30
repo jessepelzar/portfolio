@@ -16,7 +16,7 @@
 //     this.addEventListener("mousemove", simulate);
 // });
 
-  for (let i = 1; i <= 9; i++){
+  for (let i = 1; i <= 10; i++){
     var str = "break" + i.toString();
     var breakPoint = document.getElementById(str);
     breakPoint.style.display = "none";
@@ -69,7 +69,7 @@ function showHide(v) {
 
   //var span = document.createElement('span');
 
-  for (let i = 1; i <= 9; i++) {
+  for (let i = 1; i <= 10; i++) {
 
     var i_str = i.toString();
     var breakPoint = document.getElementById("break" + i_str);
