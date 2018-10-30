@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   padding-left: 10px;
-  width: 100%;
+  width: auto;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.3);
   height: 40px;
@@ -42,7 +42,7 @@
 
 .topnav li.navbar-right {
   float: right !important;
-  padding-right: 20px;
+  margin-right: 20px;
 }
 
 .topnav img {
@@ -74,7 +74,7 @@ canvas {
 
   z-index: -1;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: auto;
 
 }
