@@ -272,8 +272,8 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 }
 @media only screen and (max-width: 480px) {
   .box {
-    width: 100%;
-    padding-bottom: 100%;
+    width: 50%;
+    padding-bottom: 50%;
   }
   .infoSec {
     width: 400px;
@@ -306,6 +306,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 
 
 /*  LUMA */
+
 .tools-container-main {
   width: 100%;
   /* height: 300px; */
@@ -389,5 +390,33 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 }
 
 .tools-info li {
+  text-align: left;
+}
+
+.icons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  overflow: hidden;
+  display: inline-block;
+  height: 200px;
+
+}
+.icons img {
+  width: 15%;
+  float: left;
+  padding-right: 6%;
+  padding-bottom: 15%;
+  transition: width 0.3s linear;
+}
+
+.icons img:hover {
+  padding-bottom: 10%;
+  width: 20%;
+}
+
+.description div {
+  width: 10%;
   text-align: left;
 }

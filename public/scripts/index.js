@@ -95,11 +95,7 @@ function showHide(v) {
           top.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
         }
 
-        console.log(topProj.innerHTML);
-        console.log(tnail.innerHTML);
-
-
-
+        
         //tnailPrev.style.display = "block";
         //breakPoint.style.display = "none";
       //}
@@ -125,6 +121,31 @@ function showHide(v) {
   }
 }
 
+
+for (var i = 1; i <= 4; i++) {
+  text_selected = document.getElementById("description" + i.toString());
+  text_selected.style.display = "none";
+}
+
+
+
+function show(n) {
+
+  text_selected = document.getElementById("description" + n.toString());
+console.log(0);
+
+    text_selected.style.display = "block";
+
+}
+
+function hide(n) {
+
+  text_selected = document.getElementById("description" + n.toString());
+
+console.log(1);
+    text_selected.style.display = "none";
+
+}
 // function showHide(v) {
 //   var selectedThumbnail = v.toString();
 //   var aboveDiv = "selectedDiv" + (v-1).toString();
