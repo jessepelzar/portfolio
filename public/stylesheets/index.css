@@ -214,7 +214,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   }
   .infoSec {
     width: 1000px;
-    text-align: center;
+    /* text-align: center; */
     text-align: justify;
   }
   .portrait {
@@ -235,7 +235,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   }
   .infoSec {
     width: 600px;
-    text-align: center;
+    /* text-align: center; */
     text-align: justify;
   }
   .portrait {
@@ -277,7 +277,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   }
   .infoSec {
     width: 400px;
-    text-align: center;
+    /* text-align: center; */
     text-align: justify;
   }
   .portrait {
@@ -294,7 +294,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 }
 
 .infoSec {
-  text-align: center;
+  /* text-align: center; */
   display: none;
   margin: 0 auto;
   color: #000;
@@ -401,22 +401,200 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   overflow: hidden;
   display: inline-block;
   height: 200px;
-
+  width: 100%;
 }
+
 .icons img {
-  width: 15%;
+  width: 10%;
   float: left;
   padding-right: 6%;
-  padding-bottom: 15%;
+  padding-bottom: 5%;
   transition: width 0.3s linear;
 }
 
 .icons img:hover {
-  padding-bottom: 10%;
-  width: 20%;
+  padding-bottom: 5%;
+  width: 15%;
 }
 
-.description div {
-  width: 10%;
+.decription p {
+  width: 300px;
   text-align: left;
+}
+
+
+
+@media only screen and (min-width: 1051px) {
+  .info-container {
+    padding-top: 40px;
+    padding-left: 123px;
+  }
+
+  .icons img {
+    width: 100px;
+    float: left;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    transition: width 0.3s linear;
+  }
+
+  .icons img:hover {
+    padding-bottom: 5%;
+    width: 120px;
+  }
+
+  .decription p {
+    width: 300px;
+    text-align: left;
+  }
+
+  .info-container {
+    padding-top: 40px;
+    padding-left: 123px;
+  }
+
+  #description1 {
+    padding-left: 10px;
+  }
+  #description2 {
+    padding-left: 165px;
+  }
+  #description3 {
+    padding-left: 320px;
+  }
+  #description4 {
+    padding-left: 475px;
+  }
+}
+@media only screen and (max-width: 1050px) and (min-width: 651px) {
+  .info-container {
+    padding-top: 40px;
+    padding-left: 123px;
+  }
+  
+  .icons img {
+    width: 50px;
+    float: left;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    transition: width 0.3s linear;
+  }
+
+  .icons img:hover {
+    padding-bottom: 5%;
+    width: 80px;
+  }
+
+  .decription p {
+    width: 300px;
+    text-align: left;
+    font-size: 11pt;
+  }
+
+  .info-container {
+    padding-top: 40px;
+    padding-left: 123px;
+  }
+
+  #description1 {
+    padding-left: 10px;
+  }
+  #description2 {
+    padding-left: 120px;
+  }
+  #description3 {
+    padding-left: 230px;
+  }
+  #description4 {
+    padding-left: 340px;
+  }
+
+}
+@media only screen and (max-width: 650px) and (min-width: 481px) {
+  .info-container {
+    padding-top: 40px;
+    padding-left: 0px;
+  }
+
+  .icons img {
+    width: 50px;
+    float: left;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    transition: width 0.3s linear;
+  }
+
+  .icons img:hover {
+    padding-bottom: 5%;
+    width: 80px;
+  }
+
+  .decription p {
+    width: 300px;
+    text-align: left;
+    font-size: 11pt;
+  }
+
+  .info-container {
+    padding-top: 40px;
+    padding-left: 123px;
+  }
+
+  #description1 {
+    padding-left: 0px;
+  }
+  #description2 {
+    padding-left: 0px;
+  }
+  #description3 {
+    padding-left: 0px;
+  }
+  #description4 {
+    padding-left: 0px;
+  }
+
+}
+@media only screen and (max-width: 480px) {
+  .info-container {
+    padding-top: 40px;
+    padding-left: 0px;
+  }
+
+  .icons img {
+    width: 50px;
+    float: left;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    transition: width 0.3s linear;
+  }
+
+  .icons img:hover {
+    padding-bottom: 5%;
+    width: 80px;
+  }
+
+  .decription p {
+    width: 300px;
+    text-align: left;
+    font-size: 11pt;
+  }
+
+  .info-container {
+    padding-top: 40px;
+    padding-left: 123px;
+  }
+
+  #description1 {
+    padding-left: 0px;
+  }
+  #description2 {
+    padding-left: 0px;
+  }
+  #description3 {
+    padding-left: 0px;
+  }
+  #description4 {
+    padding-left: 0px;
+  }
+
 }

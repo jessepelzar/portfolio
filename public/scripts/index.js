@@ -95,7 +95,7 @@ function showHide(v) {
           top.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
         }
 
-        
+
         //tnailPrev.style.display = "block";
         //breakPoint.style.display = "none";
       //}
@@ -122,20 +122,22 @@ function showHide(v) {
 }
 
 
+
+
+
 for (var i = 1; i <= 4; i++) {
-  text_selected = document.getElementById("description" + i.toString());
+  var text_selected = document.getElementById("description" + i.toString());
   text_selected.style.display = "none";
 }
 
-
+//var padding = ["0px", "100px", "60px", "80px"];
 
 function show(n) {
 
   text_selected = document.getElementById("description" + n.toString());
-console.log(0);
-
-    text_selected.style.display = "block";
-
+  console.log(0);
+  text_selected.style.display = "block";
+  //text_selected.style.paddingLeft = padding[n-1];
 }
 
 function hide(n) {
