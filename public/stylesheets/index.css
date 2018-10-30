@@ -400,11 +400,11 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   padding-left: 10px;
   overflow: hidden;
   display: inline-block;
-  height: 200px;
+  height: 150px;
   width: 100%;
 }
 
-.icons img {
+/* .icons img {
   width: 10%;
   float: left;
   padding-right: 6%;
@@ -415,6 +415,11 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 .icons img:hover {
   padding-bottom: 5%;
   width: 15%;
+} */
+.info-container {
+  padding-top: 40px;
+  padding-left: 123px;
+  height: 400px;
 }
 
 .decription p {
@@ -434,12 +439,12 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     width: 100px;
     float: left;
     padding-right: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
     transition: width 0.3s linear;
   }
 
   .icons img:hover {
-    padding-bottom: 5%;
+    padding-bottom: 15px;;
     width: 120px;
   }
 
@@ -471,7 +476,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-top: 40px;
     padding-left: 123px;
   }
-  
+
   .icons img {
     width: 50px;
     float: left;
