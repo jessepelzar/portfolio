@@ -158,7 +158,7 @@
         </div>
       </div>
       <div class="infoSec" id="selectedDiv2">
-        The IR Line Following Bot was a project that utilized the Atmega32U4 chip on the Papilio Duo platform, an QTR-8RC reflectance sensor array, and the Rover 5 chassis.
+        The IR Line Following Bot was a project that utilized the Atmega 328 microcontroller, a QTR-8RC reflectance sensor array, and the Rover 5 chassis. The Line following robot project objective was to reach the end of a maze which included many pathways of white lines on a black surface under three minutes.
         <div class="tools-container-main">
           <div class="tools-container-inner">
             <div class="tools-label">
@@ -222,24 +222,24 @@
             </div>
             <div class="decription">
               <div class="description1">
-                <p>The algorithm such that four of the eight IR sensor modules were responsible for the alighnment with a black line with a white background. </p>
+                <p>The algorithm I designed was a simple but effective method for reaching the end of the maze. Following the right side and only doing right turns (like how UPS drivers operate) which eventually led to the end of the maze under three minutes.</p>
               </div>
               <div class="description2">
-                <p>The construction of the project took place within the Unity 3D environment. The language used was C# which was used for everything reguarding the TCP/IP communication between Faceshift and Unity to the visual effects.</p>
+                <p>Written in C, I was able to program at a lower level, granting me full accessibility to the chip's abilities.</p>
               </div>
               <div class="description3">
-                <p>In order to map the face topology in real-time, I decided to use the Intel Realsense SR300 which is able to effecivly comminicate with Faceshift with prestine accuracy.</p>
+                <p>Using a Buspirate programmer, I was able to flash the ATMega328 with the C code which would then be able to run my algorithm, read from the sensors and move the Rover 5 Chassis. </p>
               </div>
               <div class="description4">
-                <p>Using the Autodesk Maya environment, I was able to create a rigged head mesh consisting of 72 blendshapes which will then be provide the proper data for the program Faceshift Studio in order to mimic the realtime face topollogy.</p>
+                <p>For the rover to follow a line I needed a sensor capable of distinguishing between light and dark. The QTR-8RC was the choice for this project. Utilizing 4 of the eight sensors, I was able to use a series of conditions to test what sensors were over a black surface or over a white surface. this allowed the rover to correct itself if it began veering off course.</p>
               </div>
             </div>
           </div>
           <div class="images-container">
-            <div class="image-box 1"><img src="images/luma/dev1.JPG"></div>
-            <div class="image-box 2"><img src="images/luma/dev2.JPG"></div>
-            <div class="image-box 3"><img src="images/luma/prod1.png"></div>
-            <div class="image-box 4"><img src="images/luma/prod2.png"></div>
+            <!-- <div class="image-box 1"><img src="images/luma/dev1.JPG"></div> -->
+            <!-- <div class="image-box 2"><img src="images/luma/dev2.JPG"></div> -->
+            <!-- <div class="image-box 3"><img src="images/luma/prod1.png"></div> -->
+            <!-- <div class="image-box 4"><img src="images/luma/prod2.png"></div> -->
           </div>
         </div>
 
@@ -335,14 +335,18 @@
             </div>
           </div>
           <div class="images-container">
-            <div class="image-box 1"><img src="images/luma/dev1.JPG"></div>
-            <div class="image-box 2">
-              <img src="images/luma/dev2.JPG">
-
+            <div class="image-box 1"><img src="images/minesweep/logic1.png"></div>
+            <div class="image-box 2"><img src="images/minesweep/logic2.png"></div>
+            <div class="image-box 3"><img src="images/minesweep/logic3.png"></div>
+            <div class="image-box 4"><img src="images/minesweep/logic4.png"></div>
+            <div class="image-box 5"><img style="height:300px; width:auto;" src="images/minesweep/logic5.png"></div>
+            <div class="image-box 6"><img src="images/minesweep/logic6.png"></div>
+            <div class="image-box 7"><img src="images/minesweep/logic7.png"></div>
+            <div class="image-box 1"><img src="images/minesweep/rov1.JPG"></div>
+            <div class="image-box 1"><img src="images/minesweep/rov2.JPG"></div>
+            <div class="image-box 1"><img src="images/minesweep/rov3.JPG"></div>
+            <div class="image-box 1"><img src="images/minesweep/rov4.JPG"></div>
             </div>
-            <div class="image-box 3"><img src="images/luma/prod1.png"></div>
-            <div class="image-box 4"><img src="images/luma/prod2.png"></div>
-          </div>
           <!-- <code>
 #include <Encoder.h>
 #include <IR_Ping.h>
@@ -604,7 +608,7 @@ void loop() {
                 <ul>
                   <li>Unity 3D</li>
                   <li>Autodesk Maya</li>
-                  <li>Faceshift Studio</li>
+
                 </ul>
               </div>
             </div>
@@ -631,7 +635,7 @@ void loop() {
               <div class="tools-line"></div>
               <div class="tools-info">
                 <ul>
-                  <li>Intel Realsense</li>
+                  <li>Oculus Rift</li>
                 </ul>
               </div>
             </div>
@@ -641,38 +645,38 @@ void loop() {
           <div class="info-container">
             <div class="icons">
               <div class="icon1">
-                <a onmouseover="show(1)" onmouseout="hide(1)"><img src="images/luma/icon1.png" alt=""></a>
+                <a onmouseover="show(1)" onmouseout="hide(1)"><img src="images/loomvr/icon1.png" alt=""></a>
               </div>
               <div class="icon2">
-                <a onmouseover="show(2)" onmouseout="hide(2)"><img src="images/luma/icon2.png" alt=""></a>
+                <a onmouseover="show(2)" onmouseout="hide(2)"><img src="images/loomvr/icon2.png" alt=""></a>
               </div>
               <div class="icon3">
-                <a onmouseover="show(3)" onmouseout="hide(3)"><img src="images/luma/icon3.png" alt=""></a>
+                <a onmouseover="show(3)" onmouseout="hide(3)"><img src="images/loomvr/icon3.png" alt=""></a>
               </div>
               <div class="icon4">
-                <a onmouseover="show(4)" onmouseout="hide(4)"><img src="images/luma/icon4.png" alt=""></a>
+                <a onmouseover="show(4)" onmouseout="hide(4)"><img src="images/loomvr/icon4.png" alt=""></a>
               </div>
             </div>
             <div class="decription">
               <div class="description1">
-                <p>Using the Autodesk Maya environment, I was able to create a rigged head mesh consisting of 72 blendshapes which will then be provide the proper data for the program Faceshift Studio in order to mimic the realtime face topology.</p>
+                <p>Coming soon!</p>
               </div>
               <div class="description2">
-                <p>The construction of the project took place within the Unity 3D environment. The language used was C# which was used for everything reguarding the TCP/IP communication between Faceshift and Unity to the visual effects.</p>
+                <p>Coming soon!</p>
               </div>
               <div class="description3">
-                <p>In order to map the face topology in real-time, I decided to use the Intel Realsense SR300 which is able to effecivly comminicate with Faceshift with prestine accuracy.</p>
+                <p>Coming soon!</p>
               </div>
               <div class="description4">
-                <p>Using the Autodesk Maya environment, I was able to create a rigged head mesh consisting of 72 blendshapes which will then be provide the proper data for the program Faceshift Studio in order to mimic the realtime face topollogy.</p>
+                <p>Coming soon!</p>
               </div>
             </div>
           </div>
           <div class="images-container">
-            <div class="image-box 1"><img src="images/luma/dev1.JPG"></div>
+            <!-- <div class="image-box 1"><img src="images/luma/dev1.JPG"></div>
             <div class="image-box 2"><img src="images/luma/dev2.JPG"></div>
             <div class="image-box 3"><img src="images/luma/prod1.png"></div>
-            <div class="image-box 4"><img src="images/luma/prod2.png"></div>
+            <div class="image-box 4"><img src="images/luma/prod2.png"></div> -->
           </div>
         </div>
 
@@ -895,7 +899,6 @@ void loop() {
                 <ul>
                   <li>Unity 3D</li>
                   <li>Autodesk Maya</li>
-                  <li>Faceshift Studio</li>
                 </ul>
               </div>
             </div>
@@ -909,20 +912,19 @@ void loop() {
               <div class="tools-info">
                 <ul>
                   <li>C#</li>
-                  <li>Javascript</li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="tools-container-inner">
             <div class="tools-label">
-              <p id="category">Hardware</p>
+              <p id="category">API</p>
             </div>
             <div class="tools-content">
               <div class="tools-line"></div>
               <div class="tools-info">
                 <ul>
-                  <li>Intel Realsense</li>
+                  <li>Twilio</li>
                 </ul>
               </div>
             </div>
@@ -946,24 +948,24 @@ void loop() {
             </div>
             <div class="decription">
               <div class="description1">
-                <p>Using the Autodesk Maya environment, I was able to create a rigged head mesh consisting of 72 blendshapes which will then be provide the proper data for the program Faceshift Studio in order to mimic the realtime face topology.</p>
+                <p>Coming soon!</p>
               </div>
               <div class="description2">
-                <p>The construction of the project took place within the Unity 3D environment. The language used was C# which was used for everything reguarding the TCP/IP communication between Faceshift and Unity to the visual effects.</p>
+                <p>Coming soon!</p>
               </div>
               <div class="description3">
-                <p>In order to map the face topology in real-time, I decided to use the Intel Realsense SR300 which is able to effecivly comminicate with Faceshift with prestine accuracy.</p>
+                <p>Coming soon!</p>
               </div>
               <div class="description4">
-                <p>Using the Autodesk Maya environment, I was able to create a rigged head mesh consisting of 72 blendshapes which will then be provide the proper data for the program Faceshift Studio in order to mimic the realtime face topollogy.</p>
+                <p>Coming soon!</p>
               </div>
             </div>
           </div>
           <div class="images-container">
-            <div class="image-box 1"><img src="images/luma/dev1.JPG"></div>
-            <div class="image-box 2"><img src="images/luma/dev2.JPG"></div>
-            <div class="image-box 3"><img src="images/luma/prod1.png"></div>
-            <div class="image-box 4"><img src="images/luma/prod2.png"></div>
+            <!-- <div class="image-box 1"><img src="images/luma/dev1.JPG"></div> -->
+            <!-- <div class="image-box 2"><img src="images/luma/dev2.JPG"></div> -->
+            <!-- <div class="image-box 3"><img src="images/luma/prod1.png"></div> -->
+            <!-- <div class="image-box 4"><img src="images/luma/prod2.png"></div> -->
           </div>
         </div>
 
@@ -991,9 +993,9 @@ void loop() {
               <div class="tools-line"></div>
               <div class="tools-info">
                 <ul>
-                  <li>Unity 3D</li>
-                  <li>Autodesk Maya</li>
-                  <li>Faceshift Studio</li>
+                  <li>Madrix</li>
+                  <li>Arduino</li>
+                  <li>openGL</li>
                 </ul>
               </div>
             </div>
@@ -1006,8 +1008,8 @@ void loop() {
               <div class="tools-line"></div>
               <div class="tools-info">
                 <ul>
-                  <li>C#</li>
-                  <li>Javascript</li>
+                  <li>C/C++</li>
+                  <li>Python</li>
                 </ul>
               </div>
             </div>
@@ -1020,7 +1022,8 @@ void loop() {
               <div class="tools-line"></div>
               <div class="tools-info">
                 <ul>
-                  <li>Intel Realsense</li>
+                  <li>Arduino</li>
+                  <li>Raspberry Pi</li>
                 </ul>
               </div>
             </div>
@@ -1030,38 +1033,38 @@ void loop() {
           <div class="info-container">
             <div class="icons">
               <div class="icon1">
-                <a onmouseover="show(1)" onmouseout="hide(1)"><img src="images/luma/icon1.png" alt=""></a>
+                <a onmouseover="show(1)" onmouseout="hide(1)" onclick="window.open('http://loomxlighting.com', '_blank');"><img src="images/loomx/icon1.png" alt=""></a>
               </div>
               <div class="icon2">
-                <a onmouseover="show(2)" onmouseout="hide(2)"><img src="images/luma/icon2.png" alt=""></a>
+                <a onmouseover="show(2)" onmouseout="hide(2)"><img src="images/loomx/icon2.png" alt=""></a>
               </div>
               <div class="icon3">
-                <a onmouseover="show(3)" onmouseout="hide(3)"><img src="images/luma/icon3.png" alt=""></a>
+                <a onmouseover="show(3)" onmouseout="hide(3)"><img src="images/loomx/icon3.png" alt=""></a>
               </div>
               <div class="icon4">
-                <a onmouseover="show(4)" onmouseout="hide(4)"><img src="images/luma/icon4.png" alt=""></a>
+                <a onmouseover="show(4)" onmouseout="hide(4)"><img src="images/loomx/icon4.png" alt=""></a>
               </div>
             </div>
             <div class="decription">
               <div class="description1">
-                <p>Using the Autodesk Maya environment, I was able to create a rigged head mesh consisting of 72 blendshapes which will then be provide the proper data for the program Faceshift Studio in order to mimic the realtime face topology.</p>
+                <p>Open loomxlighting.com in a new tab by clicking this icon</p>
               </div>
               <div class="description2">
-                <p>The construction of the project took place within the Unity 3D environment. The language used was C# which was used for everything reguarding the TCP/IP communication between Faceshift and Unity to the visual effects.</p>
+                <p>Coming soon!</p>
               </div>
               <div class="description3">
-                <p>In order to map the face topology in real-time, I decided to use the Intel Realsense SR300 which is able to effecivly comminicate with Faceshift with prestine accuracy.</p>
+                <p>Coming soon!</p>
               </div>
               <div class="description4">
-                <p>Using the Autodesk Maya environment, I was able to create a rigged head mesh consisting of 72 blendshapes which will then be provide the proper data for the program Faceshift Studio in order to mimic the realtime face topollogy.</p>
+                <p>Coming soon!</p>
               </div>
             </div>
           </div>
           <div class="images-container">
-            <div class="image-box 1"><img src="images/luma/dev1.JPG"></div>
-            <div class="image-box 2"><img src="images/luma/dev2.JPG"></div>
-            <div class="image-box 3"><img src="images/luma/prod1.png"></div>
-            <div class="image-box 4"><img src="images/luma/prod2.png"></div>
+            <!-- <div class="image-box 1"><img src="images/luma/dev1.JPG"></div> -->
+            <!-- <div class="image-box 2"><img src="images/luma/dev2.JPG"></div> -->
+            <!-- <div class="image-box 3"><img src="images/luma/prod1.png"></div> -->
+            <!-- <div class="image-box 4"><img src="images/luma/prod2.png"></div> -->
           </div>
         </div>
 

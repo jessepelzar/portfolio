@@ -381,20 +381,6 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   text-align: left;
 }
 
-
-
-/* .icons img {
-  width: 10%;
-  float: left;
-  padding-right: 6%;
-  padding-bottom: 5%;
-  transition: width 0.3s linear;
-}
-
-.icons img:hover {
-  padding-bottom: 5%;
-  width: 15%;
-} */
 .project-container {
   padding-top: 40px;
   padding-left: 123px;
@@ -535,7 +521,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     list-style-type: none;
     display: inline-block;
     width: 100%;
-    height: 150px;
+    height: 130px;
   }
 
   .icons img {
