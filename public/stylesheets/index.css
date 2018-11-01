@@ -255,7 +255,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-bottom: 50%;
   }
   .infoSec {
-    width: 500px;
+    width: 450px;
     text-align: center;
     text-align: justify;
   }
@@ -269,7 +269,6 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   canvas {
     height: 400px;
   }
-
 }
 @media only screen and (max-width: 480px) {
   .box {
@@ -277,7 +276,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-bottom: 50%;
   }
   .infoSec {
-    width: 400px;
+    width: 300px;
     text-align: center;
     text-align: justify;
   }
@@ -305,7 +304,6 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   padding: 20px 26px;
 }
 
-
 /*  LUMA */
 
 .tools-container-main {
@@ -326,7 +324,6 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   /* text-align: left; */
   /* float: left; */
 }
-
 
 .tools-container-main p {
   font-family: 'Railway', sans-serif;
@@ -352,7 +349,6 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   /* float: left; */
 }
 
-
 .tools-label {
   float: left;
   padding-left: 92px;
@@ -367,8 +363,6 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-left: 92px;
 }
 
-
-
 .tools-line {
     /* width: 15%; */
     height: 200px;
@@ -378,6 +372,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     height: 50px;
     margin-top: 2px;
 }
+
 .tools-info {
     /* margin-left: 15%; */
     height: 200px;
@@ -432,9 +427,13 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   text-align: left;
 }
 
-
-
 @media only screen and (min-width: 1051px) {
+  #top {
+    width:400px;
+    height: 400px;
+    padding: 0;
+  }
+
   .project-container {
     padding-top: 40px;
     padding-left: 0px !important;
@@ -506,6 +505,12 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 
 }
 @media only screen and (max-width: 1050px) and (min-width: 651px) {
+  #top {
+    width: 300px;
+    height: 300px;
+    padding: 0;
+  }
+
   .project-container {
     padding-top: 40px;
     padding-left: 0px !important;
@@ -572,13 +577,19 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 
 }
 @media only screen and (max-width: 650px) and (min-width: 481px) {
+  #top {
+    width:300px;
+    height: 300px;
+    padding: 0;
+  }
+
   .project-container {
     padding-top: 40px;
     padding-left: 0px !important;
   }
 
   .icons {
-    padding-left: 65px;
+    padding-left: 45px;
   }
 
   .icons img {
@@ -606,16 +617,16 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   } */
 
   .description1 {
-    padding-left: 65px;
+    padding-left: 45px;
   }
   .description2 {
-    padding-left: 65px;
+    padding-left: 45px;
   }
   .description3 {
-    padding-left: 65px;
+    padding-left: 45px;
   }
   .description4 {
-    padding-left: 65px;
+    padding-left: 45px;
   }
 
   .images-container {
@@ -638,6 +649,12 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 
 }
 @media only screen and (max-width: 480px) {
+  #top {
+    width:200px;
+    height: 200px;
+    padding: 0;
+  }
+
   .project-container {
     padding-top: 40px;
     padding-left: 0px;
@@ -646,14 +663,14 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   .icons img {
     width: 50px;
     float: left;
-    padding-right: 30px;
+    padding-right: 20px;
     padding-bottom: 60px;
     transition: width 0.3s linear;
   }
 
   .icons img:hover {
     padding-bottom: 5%;
-    width: 80px;
+    width: 60px;
   }
 
   .decription p {
