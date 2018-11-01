@@ -49,7 +49,6 @@
   width: 30px;
   text-align: right;
   transition: -webkit-filter 0.3s linear;
-
   padding-top: 4px;
 }
 
@@ -271,6 +270,10 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   }
 }
 @media only screen and (max-width: 480px) {
+  .navbar-left a{
+    padding: 14px 10px;
+  }
+
   .box {
     width: 50%;
     padding-bottom: 50%;
