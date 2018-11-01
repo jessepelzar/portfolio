@@ -143,6 +143,8 @@ function hide(n) {
   text_selected = document.getElementsByClassName("description" + n.toString())[0];
   text_selected.style.display = "none";
 }
+
+
 // function showHide(v) {
 //   var selectedThumbnail = v.toString();
 //   var aboveDiv = "selectedDiv" + (v-1).toString();
