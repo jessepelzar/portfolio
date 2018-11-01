@@ -301,7 +301,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   font-family: 'Roboto', sans-serif;
   font-size: 12pt;
   font-weight: 300;
-  padding: 20px 26px;
+  /* padding: 20px 26px; */
 }
 
 /*  LUMA */
@@ -389,16 +389,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   text-align: left;
 }
 
-.icons {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  padding-left: 10px;
-  overflow: hidden;
-  display: inline-block;
-  height: 150px;
-  width: 100%;
-}
+
 
 /* .icons img {
   width: 10%;
@@ -439,8 +430,14 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-left: 0px !important;
   }
 
+
   .icons {
     padding-left: 123px;
+    overflow: hidden;
+    list-style-type: none;
+    display: inline-block;
+    width: 100%;
+    height: 150px;
   }
 
   .icons img {
@@ -518,6 +515,11 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 
   .icons {
     padding-left: 100px;
+    overflow: hidden;
+    list-style-type: none;
+    display: inline-block;
+    width: 100%;
+    height: 150px;
   }
 
   .icons img {
@@ -590,6 +592,11 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 
   .icons {
     padding-left: 45px;
+    overflow: hidden;
+    list-style-type: none;
+    display: inline-block;
+    width: 100%;
+    height: 130px;
   }
 
   .icons img {
@@ -660,20 +667,30 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     padding-left: 0px;
   }
 
+  .icons {
+    padding-left: 15px;
+    overflow: hidden;
+    list-style-type: none;
+    display: inline-block;
+    width: 100%;
+    height: 90px;
+  }
+
   .icons img {
     width: 50px;
     float: left;
     padding-right: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
     transition: width 0.3s linear;
   }
 
   .icons img:hover {
-    padding-bottom: 5%;
+    padding-bottom: 0px;
     width: 60px;
   }
 
   .decription p {
+    padding-left: 15px;
     width: 300px;
     text-align: left;
     font-size: 11pt;
