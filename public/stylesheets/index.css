@@ -79,18 +79,23 @@ canvas {
 }
 
 .portrait {
-  width: 20vw;
-  height: 20vw;
+  /* width: 20vw;
+  height: 20vw; */
+  width: 200px;
+  height: 200px;
   position: relative;
-  overflow: hidden;
-  border-radius: 50%;
+  /* overflow: hidden; */
+  /* border-radius: 50%; */
   margin: auto;
   display: block;
-  top: 70px;
+  /* top: 70px; */
+  top: 40px;
 }
 
 .portrait img {
-  width: 100%;
+  width: 200%;
+
+  margin-left: -50px;
   /* transition: -webkit-filter 1.0s linear; */
   transition: -webkit-filter 1s linear;
   transition: opacity 1s linear;
